@@ -1,5 +1,6 @@
-package mobi.idappthat.campusconnect;
+package mobi.idappthat.campusconnect.Activity;
 
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -9,6 +10,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.astuetz.PagerSlidingTabStrip;
+
+import mobi.idappthat.campusconnect.Adapter.TabsPagerAdapter;
+import mobi.idappthat.campusconnect.Fragment.PendingTransfersFragment;
+import mobi.idappthat.campusconnect.R;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -16,11 +23,18 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
-                    .commit();
-        }
+
+        getSupportActionBar().setElevation(0);
+
+        // Initialize the ViewPager and set an adapter
+        ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        pager.setAdapter(new TabsPagerAdapter(getSupportFragmentManager()));
+
+        // Bind the tabs to the ViewPager
+        PagerSlidingTabStrip tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs);
+        tabs.setViewPager(pager);
+
+        pager.setCurrentItem(1);
     }
 
 
@@ -44,21 +58,5 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    /**
-     * A placeholder fragment containing a simple view.
-     */
-    public static class PlaceholderFragment extends Fragment {
-
-        public PlaceholderFragment() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            View view = inflater.inflate(R.layout.fragment_scan, container, false);
-            return view;
-        }
     }
 }
