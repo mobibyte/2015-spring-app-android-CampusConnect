@@ -13,6 +13,15 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.Login"
+            android:label="@string/title_activity_after_login" >
+            <intent-filter>
+                <action android:name="mobi.idappthat.campusconnect.Activity.Login" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

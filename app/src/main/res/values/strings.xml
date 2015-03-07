@@ -2,4 +2,6 @@
     <string name="app_name">CampusConnect</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_after_login">AfterLogin</string>
 </resources>
