@@ -6,6 +6,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pending"
+        android:text="2 kool 5 m3"
         android:id="@+id/textView" />
 </LinearLayout>

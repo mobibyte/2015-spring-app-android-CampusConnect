@@ -13,7 +13,7 @@ import mobi.idappthat.campusconnect.Fragment.ScanFragment;
  */
 public class TabsPagerAdapter extends FragmentStatePagerAdapter {
 
-    private final String[] TITLES = {"Scan", "Pending Transfers", "Groups"};
+    private final String[] TITLES = {"Scan", "Transfers", "Groups"};
 
     public TabsPagerAdapter(FragmentManager fm) {
         super(fm);

@@ -32,6 +32,7 @@ public class MainActivity extends ActionBarActivity {
 
         // Bind the tabs to the ViewPager
         PagerSlidingTabStrip tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs);
+        tabs.setShouldExpand(true);
         tabs.setViewPager(pager);
 
         pager.setCurrentItem(1);
