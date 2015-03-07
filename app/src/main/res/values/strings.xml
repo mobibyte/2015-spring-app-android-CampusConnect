@@ -2,4 +2,13 @@
     <string name="app_name">CampusConnect</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string name="profile">Profile</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="title_activity_profile_page">ProfilePage</string>
+    <string name="title_activity_profile_edit_page">ProfileEditPage</string>
 </resources>
