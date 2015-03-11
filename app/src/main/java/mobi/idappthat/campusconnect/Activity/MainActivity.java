@@ -1,5 +1,7 @@
 package mobi.idappthat.campusconnect.Activity;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
@@ -9,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import com.astuetz.PagerSlidingTabStrip;
 
@@ -18,7 +21,6 @@ import mobi.idappthat.campusconnect.R;
 
 
 public class MainActivity extends ActionBarActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +39,6 @@ public class MainActivity extends ActionBarActivity {
 
         pager.setCurrentItem(1);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
