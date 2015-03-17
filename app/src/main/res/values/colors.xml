@@ -3,4 +3,6 @@
     <color name="blue">#03A9F4</color>
     <color name="blueDark">#01579B</color>
     <color name="banana">#FFCC00</color>
+
+    <color name="gray_light">#BDBDBD</color>
 </resources>
