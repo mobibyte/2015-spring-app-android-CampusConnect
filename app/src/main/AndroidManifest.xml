@@ -17,13 +17,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity.ProfilePage"
-            android:label="@string/title_activity_profile_page" >
-        </activity>
+            android:name=".Activity.ProfileActivity"
+            android:label="@string/title_activity_profile_page" />
         <activity
-            android:name=".Activity.ProfileEditPage"
-            android:label="@string/title_activity_profile_edit_page" >
-        </activity>
+            android:name=".Activity.EditProfileActivity"
+            android:label="@string/title_activity_profile_edit_page" />
+        <activity android:name=".Activity.ScanResultsActivity"
+            android:label="@string/activity_scan"
+            android:parentActivityName=".Activity.MainActivity" />
     </application>
 
 </manifest>

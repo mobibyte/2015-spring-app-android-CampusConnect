@@ -12,6 +12,8 @@
     <string name="title_activity_profile_page">ProfilePage</string>
     <string name="title_activity_profile_edit_page">ProfileEditPage</string>
 
+    <string name="activity_scan">Nearby users</string>
+
     <string name="action_scan">Tap to scan</string>
     <string name="action_profile">Edit profile</string>
 </resources>
