@@ -13,7 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Select All"
-            android:id="@+id/checkBox" />
+            android:id="@+id/cbSelectAll" />
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView

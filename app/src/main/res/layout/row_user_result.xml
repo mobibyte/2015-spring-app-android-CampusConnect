@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="?android:selectableItemBackground"
+    android:focusable="true"
+    android:clickable="true">
 
-    <CheckBox
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/cbSelect" />
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:layout_width="@dimen/contact_icon"
+            android:layout_height="@dimen/contact_icon"
+            android:id="@+id/ivIcon"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:layout_width="@dimen/contact_icon"
+            android:layout_height="@dimen/contact_icon"
+            android:id="@+id/ivIconChecked"
+            android:src="@mipmap/ic_check"
+            android:visibility="gone"
+            android:background="@drawable/icon_circle_checked_bg" />
+    </FrameLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="First Last"
-        android:id="@+id/tvName" />
+        android:id="@+id/tvName"
+        android:textSize="22sp"/>
 
 </LinearLayout>

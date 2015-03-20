@@ -5,4 +5,5 @@
     <color name="banana">#FFCC00</color>
 
     <color name="gray_light">#BDBDBD</color>
+    <color name="gray_inactive">#616161</color>
 </resources>

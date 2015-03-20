@@ -6,6 +6,11 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +25,7 @@ import mobi.idappthat.campusconnect.R;
 public class ScanResultsActivity extends ActionBarActivity {
 
     private RecyclerView rvResults;
+    private CheckBox cbSelectAll;
     private UserResultsAdapter resultsAdapter;
 
     private List<User> tempUsers;
@@ -38,8 +44,20 @@ public class ScanResultsActivity extends ActionBarActivity {
         Log.e("TEST", tempUsers.toString());
 
         rvResults = (RecyclerView) findViewById(R.id.rvResults);
+        cbSelectAll = (CheckBox) findViewById(R.id.cbSelectAll);
+
         rvResults.setLayoutManager(new LinearLayoutManager(this));
         rvResults.setItemAnimator(new DefaultItemAnimator());
+
+        cbSelectAll.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                for(int i = 0; i < rvResults.getChildCount(); i++) {
+                    View item = rvResults.getChildAt(i);
+                    Toast.makeText(getBaseContext(), "Yeah that doesn't work yet buddy", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         resultsAdapter = new UserResultsAdapter(tempUsers, R.layout.row_user_result, this);
         rvResults.setAdapter(resultsAdapter);

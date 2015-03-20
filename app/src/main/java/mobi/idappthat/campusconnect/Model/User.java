@@ -7,6 +7,7 @@ public class User {
 
     private String parseId;
     private String name;
+    private boolean checked = false;
 
     public User(String parseId, String name) {
         this.parseId = parseId;
@@ -19,6 +20,14 @@ public class User {
 
     public void setParseId(String parseId) {
         this.parseId = parseId;
+    }
+
+    public boolean isChecked() {
+        return checked;
+    }
+
+    public void setChecked(boolean checked) {
+        this.checked = checked;
     }
 
     public String getName() {
