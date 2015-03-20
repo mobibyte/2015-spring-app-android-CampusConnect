@@ -63,6 +63,12 @@ public class UserResultsAdapter extends RecyclerView.Adapter<UserResultsAdapter.
         viewHolder.icon.setImageDrawable(icon);
     }
 
+    public void toggleSelectAll(boolean b) {
+        for(User user : users) {
+            
+        }
+    }
+
     @Override
     public int getItemCount() {
         return users == null ? 0 : users.size();
