@@ -8,4 +8,10 @@
         <item name="android:textColorPrimary">@android:color/white</item>
     </style>
 
+    <style name="editProfileButton">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@android:color/black</item>
+    </style>
+
 </resources>
