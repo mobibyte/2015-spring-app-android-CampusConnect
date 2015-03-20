@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import mobi.idappthat.campusconnect.R;
 
@@ -18,9 +19,25 @@ public class EditProfileFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_pending, container, false);
+        View view = inflater.inflate(R.layout.fragment_edit_profile, container, false);
         context = view.getContext();
 
         return view;
+    }
+
+    //We need some getters to get data
+
+    //Gets the name text.... the others are the same
+    public String getName() {
+        EditText edit1 = (EditText) getActivity().findViewById(R.id.name);
+        return edit1.getText().toString();
+    }
+
+    public String getEmail() {
+        return null;
+    }
+
+    public String getDescription() {
+        return null;
     }
 }
