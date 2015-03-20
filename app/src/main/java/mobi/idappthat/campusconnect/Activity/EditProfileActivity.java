@@ -8,7 +8,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
 
-import mobi.idappthat.campusconnect.Fragment.EditProfileFragment;
 import mobi.idappthat.campusconnect.R;
 
 /**
