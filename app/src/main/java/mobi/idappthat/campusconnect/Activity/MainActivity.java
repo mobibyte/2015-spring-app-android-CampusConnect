@@ -1,6 +1,7 @@
 package mobi.idappthat.campusconnect.Activity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
@@ -58,6 +59,12 @@ public class MainActivity extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
+        else if(id == R.id.action_profile){
+            Intent intent = new Intent(this,ProfileActivity.class);
+            startActivity(intent);
+
+        }
+
 
         return super.onOptionsItemSelected(item);
     }

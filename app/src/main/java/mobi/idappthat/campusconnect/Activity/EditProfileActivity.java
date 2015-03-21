@@ -38,12 +38,6 @@ public class EditProfileActivity extends ActionBarActivity implements View.OnCli
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
 
-        Fragment editProfileFragment = new EditProfileFragment();
-        FragmentManager manager = getFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
-        transaction.add(R.id.edit_profile_container, editProfileFragment)
-                .addToBackStack(null)
-                .commit();
     }
 
     //This is the method we need for our onclick implements and we can loop through buttons too!
