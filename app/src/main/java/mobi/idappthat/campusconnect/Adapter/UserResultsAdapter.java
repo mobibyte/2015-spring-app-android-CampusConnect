@@ -85,7 +85,6 @@ public class UserResultsAdapter extends RecyclerView.Adapter<UserResultsAdapter.
             itemView.setOnClickListener(this);
         }
 
-
         @Override
         public void onClick(View v) {
             this.checked = !checked;
