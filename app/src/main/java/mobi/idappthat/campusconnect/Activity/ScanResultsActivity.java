@@ -35,26 +35,28 @@ public class ScanResultsActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan_results);
 
+        /* Temp view items - Fake data */
         tempUsers = new ArrayList<>();
         tempUsers.add(new User("123", "Cameron Moreau"));
         tempUsers.add(new User("123", "Jack Hammer"));
         tempUsers.add(new User("123", "Jacob Slug"));
         tempUsers.add(new User("123", "James Doug"));
 
-        Log.e("TEST", tempUsers.toString());
-
+        /* Inflate layout and set properties */
         rvResults = (RecyclerView) findViewById(R.id.rvResults);
         cbSelectAll = (CheckBox) findViewById(R.id.cbSelectAll);
 
         rvResults.setLayoutManager(new LinearLayoutManager(this));
         rvResults.setItemAnimator(new DefaultItemAnimator());
 
+        /* Select All button */
         cbSelectAll.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 for(int i = 0; i < rvResults.getChildCount(); i++) {
                     View item = rvResults.getChildAt(i);
-                    Toast.makeText(getBaseContext(), "Yeah that doesn't work yet buddy", Toast.LENGTH_SHORT).show();
+                    UserResultsAdapter.ViewHolder holder = new UserResultsAdapter.ViewHolder(item);
+                    holder.updateChecked(isChecked);
                 }
             }
         });
