@@ -25,4 +25,5 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:21.+'
     compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
     compile 'com.jpardogo.materialtabstrip:library:1.0.8'
+    compile 'com.facebook.android:facebook-android-sdk:3.+'
 }
