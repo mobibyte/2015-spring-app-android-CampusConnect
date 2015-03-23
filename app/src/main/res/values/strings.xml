@@ -15,5 +15,8 @@
     <string name="activity_scan">Nearby users</string>
 
     <string name="action_scan">Tap to scan</string>
-    <string name="action_profile">Edit profile</string>
+    <string name="action_profile">View profile</string>
+    <string name="action_edit_profile">Edit profile</string>
+    <string name="action_done">Done</string>
+    <string name="action_discard">Discard</string>
 </resources>

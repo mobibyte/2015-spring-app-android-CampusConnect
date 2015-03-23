@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 import mobi.idappthat.campusconnect.R;
 
@@ -25,6 +24,11 @@ public class EditProfileActivity extends ActionBarActivity implements View.OnCli
      * */
 
 
+    /**
+     * Yay we created a new fragment!!!
+     * Needs a container tho!!!!
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,10 +38,12 @@ public class EditProfileActivity extends ActionBarActivity implements View.OnCli
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
 
-    }
-
-    private EditText getForm(int id) {
-        return (EditText) findViewById(id);
+        Fragment editProfileFragment = new EditProfileFragment();
+        FragmentManager manager = getFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.add(R.id.edit_profile_container, editProfileFragment)
+                .addToBackStack(null)
+                .commit();
     }
 
     //This is the method we need for our onclick implements and we can loop through buttons too!
@@ -45,20 +51,11 @@ public class EditProfileActivity extends ActionBarActivity implements View.OnCli
     public void onClick(View v) {
         switch(v.getId()) {
             case R.id.discard:
-                int[] formIds = {R.id.name, R.id.email, R.id.description, R.id.phone,
-                R.id.major};
-                for(int id : formIds) {
-                    getForm(id).clearComposingText();
-                }
+                //clear the edit text by talking to the fragment
                 break;
             case R.id.done:
                 //save the edit text to somewhere maybe shared prefs or a DB?
                 break;
         }
     }
-
-    /**
-     * TODO: Create a method to get the current user data and fill in the edit texts
-     * if there is none do nothing..
-     */
 }
