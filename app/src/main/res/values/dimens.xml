@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
@@ -6,3 +7,10 @@
     <dimen name="padding_large">32dp</dimen>
     <dimen name="contact_icon">48dp</dimen>
 </resources>
+=======
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>
+>>>>>>> f107dba67da015992bbaa48ec4b29a8f8886db0f

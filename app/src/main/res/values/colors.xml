@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="blue">#03A9F4</color>
@@ -6,4 +7,11 @@
 
     <color name="gray_light">#BDBDBD</color>
     <color name="gray_inactive">#616161</color>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#03A9F4</color>
+    <color name="blueDark">#01579B</color>
+    <color name="banana">#FFCC00</color>
+>>>>>>> f107dba67da015992bbaa48ec4b29a8f8886db0f
 </resources>

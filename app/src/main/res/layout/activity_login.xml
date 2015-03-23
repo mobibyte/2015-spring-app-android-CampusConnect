@@ -1,6 +1,19 @@
+<<<<<<< HEAD:app/src/main/res/layout/activity_login.xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="scan"
+        android:id="@+id/textView3" />
+>>>>>>> f107dba67da015992bbaa48ec4b29a8f8886db0f:app/src/main/res/layout/fragment_scan_results.xml
 </LinearLayout>
