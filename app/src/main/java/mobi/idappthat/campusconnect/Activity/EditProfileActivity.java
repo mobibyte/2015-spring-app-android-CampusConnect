@@ -26,7 +26,7 @@ public class EditProfileActivity extends ActionBarActivity implements View.OnCli
      * - Cameron
      * */
 
-     @Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
