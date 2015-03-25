@@ -27,4 +27,5 @@ dependencies {
     compile 'com.jpardogo.materialtabstrip:library:1.0.8'
     compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
     compile 'com.getbase:floatingactionbutton:1.9.+'
+    compile 'de.hdodenhof:circleimageview:1.2.2'
 }

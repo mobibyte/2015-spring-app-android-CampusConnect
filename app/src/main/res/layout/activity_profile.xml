@@ -2,18 +2,66 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:background="@color/blue"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_marginTop="100sp"
-        android:layout_gravity="center_horizontal|center_vertical"
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/profilepic"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:border_color="#FF000000"/>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/profilepic"
-        android:id="@+id/profilePic"
+        android:text="Dodge"
+        android:layout_margin="30dp"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        />
 
-    />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="@string/description_placeholder"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right">
+
+        <Button
+            style="@style/editProfileButton"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:text="Done"
+            android:id="@+id/done"/>
+
+        <Button
+            style="@style/editProfileButton"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:text="Add Contact"
+            android:id="@+id/addContact" />
+    </LinearLayout>
+
+
+
+
 
 
 
