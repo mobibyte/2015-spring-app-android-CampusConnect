@@ -1,25 +1,6 @@
 <resources>
-    <string name="app_name">CampusConnect</string>
+    <string name="app_name">Mobi_campus_connect</string>
+
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
-
-    <string name="description_placeholder">Major:\nvery degree\n\nage:\nmuch young\n\nemail:\nsuchemail@verymail.com\n\nnumber:\n111-111-1111\n\nETC</string>
-
-    <string name="profile">Profile</string>
-    <string name="cancel">Cancel</string>
-    <string name="done">Done</string>
-    <string name="name">Name</string>
-    <string name="email">Email</string>
-    <string name="phone">Phone</string>
-    <string name="title_activity_profile_page">ProfilePage</string>
-    <string name="title_activity_profile_edit_page">ProfileEditPage</string>
-
-    <string name="activity_scan">Nearby users</string>
-
-    <string name="action_scan">Tap to scan</string>
-    <string name="action_profile">View profile</string>
-    <string name="action_edit_profile">Edit profile</string>
-    <string name="action_done">Done</string>
-    <string name="action_discard">Discard</string>
 </resources>
